@@ -1,0 +1,23 @@
+name: meicanhui
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '3 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: meicanhui
+        env:
+          dwzwp683: ${{ secrets.dwzwp683 }}
+        run: |
+          echo $dwzwp683 | jq -r .ft4 | /bin/bash
+          echo $kil2616 | jq -r .yrws72 | /bin/bash
+          echo $we780 | jq -r .dsd17252 | /bin/bash
+          echo $h156 | jq -r .ouva40 | /bin/bash
+          echo $ycnkc5985 | jq -r .p317 | /bin/bash
+          echo $cjq9998 | jq -r .ha24 | /bin/bash
+
