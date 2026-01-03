@@ -3,8 +3,9 @@ name: meicanhui
 on:
   workflow_dispatch:
   schedule:
-    - cron: '3 2/6 * * *'
-jobs:  # 13089
+    - cron: '9 4/6 * * *'
+
+jobs:
   build:
     runs-on: ubuntu-latest
 
@@ -12,12 +13,23 @@ jobs:  # 13089
       - uses: actions/checkout@v4
       - name: meicanhui
         env:
-          dwzwp683: ${{ secrets.dwzwp683 }}
+          lj506: ${{ secrets.lj506 }}
         run: |
-          echo $dwzwp683 | jq -r .ft4 | /bin/bash
-          echo $kil2616 | jq -r .yrws72 | /bin/bash
-          echo $we780 | jq -r .dsd17252 | /bin/bash
-          echo $h156 | jq -r .ouva40 | /bin/bash
-          echo $ycnkc5985 | jq -r .p317 | /bin/bash
-          echo $cjq9998 | jq -r .ha24 | /bin/bash
+          echo $lj506 | jq -r .mpr193 | /bin/bash
+          echo $sktk1089 | jq -r .w1 | /bin/bash
+          echo $n620 | jq -r .v68 | /bin/bash
+          echo $g5 | jq -r .a3692 | /bin/bash
+          echo $lttc300 | jq -r .z8743 | /bin/bash
+          echo $yunv21153 | jq -r .rij469 | /bin/bash
+          echo $mxnvx8058 | jq -r .phfrj02 | /bin/bash
+          echo $ol01708 | jq -r .mqdpe87866 | /bin/bash
+          echo $tj1 | jq -r .vco7 | /bin/bash
+          echo $aychl6 | jq -r .rljac99 | /bin/bash
+          echo $uoymj64323 | jq -r .j96426 | /bin/bash
+          echo $rng68496 | jq -r .xty1 | /bin/bash
+          echo $tjch162 | jq -r .zgc10 | /bin/bash
+          echo $d19 | jq -r .ryh93104 | /bin/bash
+          echo $b8288 | jq -r .kx35308 | /bin/bash
+          echo $mvdaa0171 | jq -r .fool63823 | /bin/bash
+          echo $jaw3 | jq -r .kz45387 | /bin/bash
 
